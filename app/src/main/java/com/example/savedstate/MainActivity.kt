@@ -6,7 +6,6 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.SavedStateViewModelFactory
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 
 class MainActivity : AppCompatActivity() {
     private var NAME : String = "hoang"
@@ -32,5 +31,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putString(NAME,"vinhhoang")
+    }
+    private fun vinh1(){
+
     }
 }
