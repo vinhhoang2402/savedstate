@@ -33,6 +33,6 @@ class MainActivity : AppCompatActivity() {
         outState.putString(NAME,"vinhhoang")
     }
     private fun vinh1(){
-
+        Log.d("vinh","vinh push 2")
     }
 }
