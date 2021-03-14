@@ -47,4 +47,8 @@ class MainActivity : AppCompatActivity() {
     private fun vinh4(){
         Log.d("vinh","vinh push 44444444444")
     }
+
+    private fun vinh5(){
+        Log.d("vinh","vinh push 555555555555")
+    }
 }
