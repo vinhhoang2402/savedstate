@@ -33,4 +33,7 @@ class MainActivity : AppCompatActivity() {
         outState.putString(NAME,"vinhhoang")
     }
 
+    fun vinh(){
+        Log.d("vinh","ffffffff")
+    }
 }
