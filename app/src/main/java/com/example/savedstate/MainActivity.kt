@@ -32,31 +32,5 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         outState.putString(NAME,"vinhhoang")
     }
-    private fun vinh1(){
-        Log.d("vinh","vinh push 2")
-    }
 
-    private fun vinh2(){
-        Log.d("vinh","vinh push 234gdfgfd")
-    }
-
-    private fun vinh3(){
-        Log.d("vinh","vinh push 33333333333")
-    }
-
-    private fun vinh4(){
-        Log.d("vinh","vinh push 44444444444")
-    }
-
-    private fun vinh5(){
-        Log.d("vinh","vinh push 555555555555")
-    }
-
-    private fun vinh6(){
-        Log.d("vinh","vinh push 6666666666")
-    }
-
-    private fun vinh7(){
-        Log.d("vinh","vinh push 77777777")
-    }
 }
