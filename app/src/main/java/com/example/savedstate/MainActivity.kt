@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun vinh(){
-
+        Log.d("vinh","ffffffff")
     }
 }
