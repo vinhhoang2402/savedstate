@@ -36,4 +36,8 @@ class MainActivity : AppCompatActivity() {
     fun vinh(){
         Log.d("vinh","ffffffff")
     }
+
+    fun vinh1(){
+        Log.d("vinh","1111111111")
+    }
 }
