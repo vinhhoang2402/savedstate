@@ -5,21 +5,25 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 
-class MainViewModel(state : SavedStateHandle): ViewModel() {
+class MainViewModel(state: SavedStateHandle) : ViewModel() {
 
     private val savedStateHandle = state
-    private val _userId : MutableLiveData<String> = savedStateHandle.getLiveData(USER_KEY)
+    private var _name: MutableLiveData<String> = MutableLiveData()
+    val name: LiveData<String> = _name
 
-    val userId : LiveData<String> = _userId
     companion object {
-        private val USER_KEY = "userId"
+        private const val USER_KEY = "userId"
     }
 
-    fun saveCurrentUser(userId: String) {
+    fun saveCurrentUserViewModel(userId: String) {
+        _name.value = userId
+    }
+
+    fun saveCurrentUserState(userId: String) {
         savedStateHandle.set(USER_KEY, userId)
     }
 
-    fun getCurrentUser(): String {
-        return savedStateHandle.get(USER_KEY)?: ""
+    fun getCurrentUser(): LiveData<String> {
+        return savedStateHandle.getLiveData(USER_KEY)
     }
 }
